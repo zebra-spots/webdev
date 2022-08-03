@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">SURVEY FORM</h1>
+      <p id="description">Fill in this survey</p>
+    </header>    
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Please enter your name: </label>
+        <input id="name" type="text" placeholder="Your Name" required>
+<hr>
+        <label for="email" id="email-label">Please enter your email: </label>
+        <input id="email" type="email" placeholder="email@domain.com" required>
+<hr>
+        <label for="number" id="number-label">Please enter your age: </label>
+        <input id="number" type="number" min="5" max="100" placeholder="5 - 100">
+<hr>
+        <label for="dropdown">Dropdown: </label>
+        <select id="dropdown">
+          <option> (Please select) </option>
+          <option> Two </option>
+        </select>
+<hr>
+        <label>Spam or Eggs: </label>
+        <input type="radio" name="radio-group" id="spam" value="0">
+        <label for="spam">Spam</label>
+        <input type="radio" name="radio-group" id="eggs" value="1">
+        <label for="eggs">Eggs</label>
+<hr>
+        <label>Checkboxes: </label>
+        <input type="checkbox" value="0" id="pancake">
+        <label for="pancake">Pancake</label>
+        <input type="checkbox" value="1" id="sandwich">
+        <label for="sandwich">Sandwich</label>
+<hr>
+        <textarea>Please enter additional comments here</textarea>
+<hr>
+        <input type="submit" id="submit">
+      </form>      
+    </main>
+  </body>
+</html>
+
+
